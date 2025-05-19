@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistemul Nervos</title>
+  <!-- Faviconuri pentru toate dispozitivele -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/poze/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/poze/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/poze/favicon_io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/poze/favicon_io/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/poze/favicon_io/android-chrome-512x512.png">
+<link rel="manifest" href="assets/poze/Icon/site.webmanifest"> <!-- opțional dacă ai un manifest.json -->
+
+<!-- Clasic .ico pentru fallback pe browsere vechi -->
+<link rel="shortcut icon" href="assets/poze/favicon_io/favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style-nervos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <!-- Left part of loader -->
+        <div id="loader-left" style="background-image: url('assets/poze/fundal.png');"></div>
+        
+        <!-- Right part of loader -->
+        <div id="loader-right" style="background-image: url('assets/poze/fundal.png');"></div>
+    
+        <!-- Center part with rotating ADN -->
+        <div id="loader-center">
+            <h1 class="site-title">Biologie Interactiva</h1>
+            <img id="rotating-adn" src="assets/poze/adn.png" alt="Rotating ADN" />
+        </div>
+    </div>
+    
+
+  <!-- HEADER -->
+  <header class="hero">
+    <h1>Sistemul Nervos</h1>
+    <p>Controlează activitățile corpului și răspunde la stimuli.</p>
+    <div class="buttons">
+      <button class="start">Începe acum</button>
+      <button class="more">Află mai multe</button>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="highlight-box">
+      <h2>Componente principale</h2>
+      <p class="error-text">Sistemul nervos este format din creier, măduva spinării și nervi. Acesta coordonează și reglează toate funcțiile corpului.</p>
+    </div>
+  </section>
+
+  <!-- CREIERUL -->
+  <section class="section light">
+    <h2>Creierul</h2>
+    <p class="error-text">Creierul este centrul de control al corpului. Procesează informații, generează gânduri, emoții și controlează mișcările voluntare.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Diagram_showing_the_parts_of_the_brain_CRUK_066.svg" alt="Creier" class="center-img dynamic-img">
+  </section>
+
+  <!-- MĂDUVA SPINĂRII -->
+  <section class="section">
+    <h2>Măduva spinării</h2>
+    <p class="error-text">Măduva spinării transmite semnale între creier și restul corpului. Este protejată de coloana vertebrală.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Gray_111_-_Central_nervous_system.svg" alt="Măduva spinării" class="center-img dynamic-img">
+  </section>
+
+  <!-- NERVII -->
+  <section class="section light">
+    <h2>Nervii</h2>
+    <div class="bone-list">
+      <ul>
+        <li><strong>Nervi senzitivi:</strong> Transmit informații de la organe spre creier.</li>
+        <li><strong>Nervi motori:</strong> Trimit comenzi de la creier către mușchi.</li>
+        <li><strong>Nervi miști:</strong> Conțin atât fibre senzitive cât și motorii.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FUNCȚII -->
+  <section class="section">
+    <h2>Funcțiile sistemului nervos</h2>
+    <p class="error-text">Acest sistem asigură recepționarea și procesarea stimulilor, coordonarea mișcărilor, reglarea funcțiilor interne și menținerea echilibrului organismului.</p>
+  </section>
+
+  <!-- BUTON ÎNAPOI -->
+  <div class="buttons" style="margin-bottom: 3rem;">
+    <button id="goBackBtn">Înapoi la Sisteme</button>
+  </div>
+
+  <!-- SWITCH TEMĂ -->
+  <div id="theme-toggle" onclick="toggleTheme()">
+    <i class='bx bx-moon'></i>
+  </div>
+
+  <script src="assets/js/script-nervos.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemul Osos</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles-oase.css">
+</head>
+<body>
+  <!-- Butonul pentru meniul retractabil -->
+  <div id="menu-toggle" class="menu-toggle">
+    <i class='bx bx-menu'></i> <!-- Iconița pentru meniu -->
+  </div>
+<!-- Buton Notițe în colțul dreapta sus -->
+<div id="notite-btn-container" class="top-right">
+  <button id="notiteBtn" class="notite-btn" onclick="toggleNotite()">
+    <i class='bx bx-notepad'></i> Notițe
+  </button>
+</div>
+
+<div id="notitePanel" class="notite-panel">
+  <div class="notite-header">
+    <span>Notițele mele</span>
+    <span class="close-small" onclick="toggleNotite()">&times;</span>
+  </div>
+  <iframe src="notite1.html"></iframe>
+  
+ </div>
+
+
+
+  <!-- Meniul lateral -->
+  <div id="side-menu" class="side-menu">
+    <ul>
+      <li><a href="#ce-este"><i class='bx bx-info-circle'></i> Ce este sistemul osos?</a></li>
+      <li><a href="#structura"><i class='bx bx-cogs'></i> Structura</a></li>
+      <li><a href="#articulatii"><i class='bx bx-heart'></i> Articulații</a></li>
+      <li><a href="#dezvoltare"><i class='bx bx-brain'></i> Dezvoltare</a></li>
+      <li><a href="#boli"><i class='bx bx-dizzy'></i> Boli comune</a></li>
+      <li><a href="#curiozitati"><i class='bx bx-git-branch'></i> Curiozități</a></li>
+    </ul>
+  </div>
+
+  <div id="loader-wrapper">
+    <div id="loader-left" style="background-image: url('assets/poze/fundal.png');"></div>
+    <div id="loader-right" style="background-image: url('assets/poze/fundal.png');"></div>
+    <div id="loader-center">
+        <h1 class="site-title">Biologie Interactiva</h1>
+        <!-- Faviconuri pentru toate dispozitivele -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/poze/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/poze/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/poze/favicon_io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/poze/favicon_io/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/poze/favicon_io/android-chrome-512x512.png">
+<link rel="manifest" href="assets/poze/Icon/site.webmanifest"> <!-- opțional dacă ai un manifest.json -->
+
+<!-- Clasic .ico pentru fallback pe browsere vechi -->
+<link rel="shortcut icon" href="assets/poze/favicon_io/favicon.ico" type="image/x-icon">
+        <img id="rotating-adn" src="assets/poze/adn.png" alt="Rotating ADN" />
+    </div>
+  </div>
+
+  <header class="hero">
+    <h1 class="animate-title">Sistemul Osos</h1>
+    <p>Website-ul pentru învățarea anatomiei</p>
+    <div class="search-container">
+      <input type="search" id="search" placeholder="Căutare...">
+      <i class='bx bx-search' id="search-icon" style="cursor: pointer;"></i>
+    </div>
+  </header>
+
+  <section class="section light" id="ce-este">
+    <h2>Ce este sistemul osos?</h2>
+    <p>Sistemul osos este ansamblul structurilor dure (oase, cartilaje și ligamente) care oferă susținere, protecție și mișcare corpului uman.</p>
+  
+ 
+    <p><strong>Scheletul uman cuprinde 206 oase.</strong> Acestea se află sub controlul a sute de mușchi scheletici care la rândul lor sunt controlați pe calea impulsurilor nervoase primite de la SNC.</p>
+    
+    <p>Din punct de vedere anatomic, scheletul se împarte în:</p>
+    <ul>
+      <li><i class='bx bx-bone'></i><strong>Schelet axial</strong> (alcătuit din 80 de oase): oasele axului central al corpului (craniu, coloană vertebrală, cușca toracică și osul hioid); Practic, toate oasele capului și trunchiului sunt oase axiale.</li>
+      <li><i class='bx bx-bone'></i><strong>Scheletul membrelor</strong> (alcătuit din 126 de oase): oasele membrelor superioare și inferioare (oase periferice) și oasele care le permit atașarea de corp (centuri).</li>
+    </ul>
+  </section>
+
+  <section class="section" id="structura">
+    <h2>Structura sistemului osos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Componentă</th>
+          <th>Include</th>
+          <th>Funcție</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Schelet axial</td>
+          <td>Craniu, coloană vertebrală, coaste, stern</td>
+          <td>Protejează organele interne și oferă suport central</td>
+        </tr>
+        <tr>
+          <td>Schelet apendicular</td>
+          <td>Membre, centura pelviană și scapulară</td>
+          <td>Permite mișcarea</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section light" id="tipuri-oase">
+    <h2>Tipuri de oase</h2>
+    <ul>
+      <li><strong>Oase lungi:</strong> femur, humerus</li>
+      <li><strong>Oase scurte:</strong> carpienele, tarsienele</li>
+      <li><strong>Oase late:</strong> scapula, stern</li>
+      <li><strong>Oase neregulate:</strong> vertebrele</li>
+    </ul>
+    <img src="assets/poze/tipuri-oase.png" alt="Tipuri de oase" class="center-img" />
+  </section>
+
+  <section class="section" id="os-tipic">
+    <h2>Structura unui os</h2>
+    <ul>
+      <li><strong>Epifize:</strong> capetele osului</li>
+      <li><strong>Diafiză:</strong> mijlocul osului</li>
+      <li><strong>Periost:</strong> înveliș protector</li>
+      <li><strong>Canal medular:</strong> conține măduva osoasă</li>
+    </ul>
+    <img src="assets/poze/os-structura.png" alt="Structura osului" class="center-img" />
+  </section>
+
+  <section class="section light" id="articulatii">
+    <h2>Articulații și mișcare</h2>
+    <p>Mușchii și articulațiile permit mișcarea scheletului. Există articulații fixe (craniu), semimobile (vertebre) și mobile (genunchi, umăr).</p>
+    <img src="muscles.svg" alt="Mușchi" class="center-img">
+  </section>
+
+  <section class="section" id="dezvoltare">
+    <h2>Dezvoltarea sistemului osos</h2>
+    <p>Scheletul se dezvoltă treptat. La naștere, multe oase sunt din cartilaj care se osifică în timp.</p>
+    <div class="growth">
+      <img src="baby.svg" alt="Bebeluș" />
+      <img src="skeleton.svg" alt="Schelet copil" class="dynamic-img" />
+    </div>
+  </section>
+
+  <section class="section light" id="boli">
+    <h2>Boli comune ale sistemului osos</h2>
+    <ul>
+      <li><strong>Osteoporoză:</strong> pierderea densității osoase</li>
+      <li><strong>Fracturi:</strong> rupturi ale oaselor</li>
+      <li><strong>Artrită:</strong> inflamație a articulațiilor</li>
+    </ul>
+  </section>
+
+  <section class="section" id="curiozitati">
+    <h2>Curiozități despre sistemul osos</h2>
+    <ul>
+      <li>Un bebeluș are ~270 de oase, dar un adult are 206.</li>
+      <li>Femurul este cel mai lung os din corp.</li>
+      <li>Stapes (urechea medie) este cel mai mic os – 2.5 mm.</li>
+    </ul>
+  </section>
+
+  <div class="buttons">
+    <button id="goBackBtn">Înapoi la Sisteme</button>
+  </div>
+
+  <div id="theme-toggle" onclick="toggleTheme()" class="bottom-right">
+    <i class='bx bx-moon'></i>
+  </div>
+
+  <script src="assets/js/script-oase.js"></script>
+</body>
+</html>

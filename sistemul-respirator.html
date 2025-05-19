@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistemul Respirator</title>
+  <!-- Faviconuri pentru toate dispozitivele -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/poze/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/poze/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/poze/favicon_io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/poze/favicon_io/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/poze/favicon_io/android-chrome-512x512.png">
+<link rel="manifest" href="assets/poze/Icon/site.webmanifest"> <!-- opțional dacă ai un manifest.json -->
+
+<!-- Clasic .ico pentru fallback pe browsere vechi -->
+<link rel="shortcut icon" href="assets/poze/favicon_io/favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style-respirator.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="loader-wrapper">
+    <!-- Left part of loader -->
+    <div id="loader-left" style="background-image: url('assets/poze/fundal.png');"></div>
+    
+    <!-- Right part of loader -->
+    <div id="loader-right" style="background-image: url('assets/poze/fundal.png');"></div>
+
+    <!-- Center part with rotating ADN -->
+    <div id="loader-center">
+        <h1 class="site-title">Biologie Interactiva</h1>
+        <img id="rotating-adn" src="assets/poze/adn.png" alt="Rotating ADN" />
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="hero">
+    <h1>Sistemul Respirator</h1>
+    <p>Permite schimbul de oxigen și dioxid de carbon între organism și mediu.</p>
+    <div class="buttons">
+      <button class="start">Începe acum</button>
+      <button class="more">Află mai multe</button>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="highlight-box">
+      <h2>Componente principale</h2>
+      <p class="error-text">Sistemul respirator include plămânii, traheea, bronhiile și alveolele. Rolul său principal este să aducă oxigen în sânge și să elimine dioxidul de carbon din organism.</p>
+    </div>
+  </section>
+
+  <!-- PLĂMÂNII -->
+  <section class="section light">
+    <h2>Plămânii</h2>
+    <p class="error-text">Plămânii sunt organe esențiale în procesul de respirație, unde are loc schimbul de gaze. Fiecare plămân este alcătuit din loburi și alveole.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Lungs_diagram.svg" alt="Plămânii" class="center-img dynamic-img">
+  </section>
+
+  <!-- TRAHEEA ȘI BRONHIILE -->
+  <section class="section">
+    <h2>Traheea și Bronhiile</h2>
+    <div class="bone-list">
+      <ul>
+        <li><strong>Traheea:</strong> Este un tub care leagă gâtul de plămâni, permitând trecerea aerului.</li>
+        <li><strong>Bronhii:</strong> Sunt ramificațiile traheei care ajung în fiecare plămân și se împart în bronhiole.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ALVEOLELE -->
+  <section class="section light">
+    <h2>Alveolele</h2>
+    <p class="error-text">Alveolele sunt mici saci de aer din plămâni unde are loc schimbul de gaze: oxigenul pătrunde în sânge și dioxidul de carbon este eliminat din sânge.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Alveolus_and_gas_exchange.svg" alt="Alveole" class="center-img dynamic-img">
+  </section>
+
+  <!-- BUTON ÎNAPOI -->
+  <div class="buttons" style="margin-bottom: 3rem;">
+    <button id="goBackBtn">Înapoi la Sisteme</button>
+  </div>
+
+  <!-- SWITCH TEMĂ -->
+  <div id="theme-toggle" onclick="toggleTheme()">
+    <i class='bx bx-moon'></i>
+  </div>
+
+  <script src="assets/js/script-respirator.js"></script>
+</body>
+</html>

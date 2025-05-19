@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistemul Muscular</title>
+  <!-- Faviconuri pentru toate dispozitivele -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/poze/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/poze/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/poze/favicon_io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/poze/favicon_io/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/poze/favicon_io/android-chrome-512x512.png">
+<link rel="manifest" href="assets/poze/Icon/site.webmanifest"> <!-- opțional dacă ai un manifest.json -->
+
+<!-- Clasic .ico pentru fallback pe browsere vechi -->
+<link rel="shortcut icon" href="assets/poze/favicon_io/favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style-muscular.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Butonul pentru meniul retractabil -->
+   <div id="menu-toggle" class="menu-toggle">
+    <i class='bx bx-menu'></i> <!-- Iconița pentru meniu -->
+  </div>
+
+  <!-- Buton Notițe în colțul dreapta sus -->
+<div id="notite-btn-container" class="top-right">
+  <button id="notiteBtn" class="notite-btn" onclick="toggleNotite()">
+    <i class='bx bx-notepad'></i> Notițe
+  </button>
+</div>
+
+<div id="notitePanel" class="notite-panel">
+  <div class="notite-header">
+    <span>Notițele mele</span>
+    <span class="close-small" onclick="toggleNotite()">&times;</span>
+  </div>
+  <iframe src="notite1.html"></iframe>
+  
+ </div>
+
+
+ <!-- Meniul lateral -->
+<div id="side-menu" class="side-menu">
+  <ul>
+    <li><a href="#ce-este"><i class='bx bx-info-circle'></i> Ce este sistemul muscular?</a></li>
+    <li><a href="#structura"><i class='bx bx-cogs'></i> Structura</a></li>
+    <li><a href="#miscare"><i class='bx bx-heart'></i> Mușchi și mișcare</a></li>
+    <li><a href="#dezvoltare"><i class='bx bx-brain'></i> Dezvoltare</a></li>
+    <li><a href="#boli"><i class='bx bx-dizzy'></i> Boli comune</a></li>
+    <li><a href="#curiozitati"><i class='bx bx-git-branch'></i> Curiozități</a></li>
+  </ul>
+</div>
+
+  <div id="loader-wrapper">
+    <!-- Left part of loader -->
+    <div id="loader-left" style="background-image: url('assets/poze/fundal.png');"></div>
+    
+    <!-- Right part of loader -->
+    <div id="loader-right" style="background-image: url('assets/poze/fundal.png');"></div>
+
+    <!-- Center part with rotating ADN -->
+    <div id="loader-center">
+        <h1 class="site-title">Biologie Interactiva</h1>
+        <img id="rotating-adn" src="assets/poze/adn.png" alt="Rotating ADN" />
+    </div>
+</div>
+
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>Sistemul Muscular</h1>
+    <p>Mușchii ne ajută să ne mișcăm, să stăm în picioare și să fim activi.</p>
+    <div class="buttons">
+      <button class="start">Începe acum</button>
+      <button class="more">Află mai multe</button>
+    </div>
+  </header>
+
+  <!-- CE ESTE -->
+  <section id="ce-este" class="section">
+    <h2>Ce este sistemul muscular?</h2>
+    <p>Sistemul muscular este format din toți mușchii corpului nostru. Este responsabil pentru mișcare, susținere și menținerea posturii.</p>
+    <img src="assets/poze/1.png" alt="mușchi corp" class="center-img dynamic-img">
+  </section>
+
+  <!-- MIȘCARE -->
+  <section id="miscare" class="section light">
+    <h2>Mușchi și mișcare</h2>
+    <p>Mușchii lucrează împreună cu oasele pentru a permite corpului să se miște. Ei se contractă și se relaxează pentru fiecare acțiune.</p>
+    <img src="assets/poze/2.png" alt="copil flexând mușchiul" class="center-img dynamic-img">
+  </section>
+
+  <!-- DEZVOLTARE -->
+  <section id="dezvoltare" class="section">
+    <h2>Dezvoltarea mușchilor</h2>
+    <p>Pe măsură ce creștem, mușchii se dezvoltă. Devind mai mari, mai puternici și mai bine coordonați.</p>
+    <div class="image-box double">
+      <img src="assets/poze/3.png" alt="copil de-a bușilea" class="dynamic-img">
+      <img src="assets/poze/4.png" alt="copil se ridică" class="dynamic-img">
+    </div>
+    <img src="assets/poze/5.png" alt="mușchi dezvoltați" class="small-img dynamic-img">
+  </section>
+
+  <!-- ÎNAPOI -->
+  <div class="buttons" style="margin-bottom: 3rem;">
+    <button id="goBackBtn">Înapoi la Sisteme</button>
+  </div>
+
+  <!-- SWITCH TEMĂ -->
+  <div id="theme-toggle" onclick="toggleTheme()">
+    <i class='bx bx-moon'></i>
+  </div>
+
+  <script src="assets/js/script-muscular.js"></script>
+</body>
+</html>

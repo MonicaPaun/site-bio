@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistemul Circulator</title>
+  <!-- Faviconuri pentru toate dispozitivele -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/poze/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/poze/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/poze/favicon_io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/poze/favicon_io/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/poze/favicon_io/android-chrome-512x512.png">
+<link rel="manifest" href="assets/poze/Icon/site.webmanifest"> <!-- opțional dacă ai un manifest.json -->
+
+<!-- Clasic .ico pentru fallback pe browsere vechi -->
+<link rel="shortcut icon" href="assets/poze/favicon_io/favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style-circulator.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="loader-wrapper">
+    <!-- Left part of loader -->
+    <div id="loader-left" style="background-image: url('assets/poze/fundal.png');"></div>
+    
+    <!-- Right part of loader -->
+    <div id="loader-right" style="background-image: url('assets/poze/fundal.png');"></div>
+
+    <!-- Center part with rotating ADN -->
+    <div id="loader-center">
+        <h1 class="site-title">Biologie Interactiva</h1>
+        <img id="rotating-adn" src="assets/poze/adn.png" alt="Rotating ADN" />
+    </div>
+</div>
+
+
+<!-- HEADER -->
+<header class="hero">
+  <h1>Sistemul Circulator</h1>
+  <p>Transportă oxigenul, substanțele nutritive și elimină deșeurile.</p>
+  <div class="buttons">
+    <button class="start">Începe acum</button>
+    <button class="more">Află mai multe</button>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="highlight-box">
+    <h2>Componente principale</h2>
+    <p class="error-text">Sistemul circulator include inima, vasele de sânge și sângele. Acesta este responsabil pentru distribuția oxigenului și a nutrienților în corp și pentru eliminarea dioxidului de carbon și a altor reziduuri.</p>
+  </div>
+</section>
+
+<!-- INIMA -->
+<section class="section light">
+  <h2>Inima</h2>
+  <p class="error-text">Inima este un mușchi puternic care pompează sângele. Este împărțită în patru camere: două atrii și două ventricule.</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Heart_diagram-en.svg" alt="Inima" class="center-img dynamic-img">
+</section>
+
+<!-- VASE DE SÂNGE -->
+<section class="section">
+  <h2>Vasele de sânge</h2>
+  <div class="bone-list">
+    <ul>
+      <li><strong>Artere:</strong> Transportă sângele oxigenat de la inimă.</li>
+      <li><strong>Vene:</strong> Transportă sângele înapoi la inimă.</li>
+      <li><strong>Capilare:</strong> Realizează schimbul de gaze și nutrienți.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CIRCUITUL SÂNGELUI -->
+<section class="section light">
+  <h2>Circulația sângelui</h2>
+  <p class="error-text">Sângele circulă într-un sistem închis, format din vase. Acesta susține homeostazia și funcționarea organelor.</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Circulatory_System_simple.svg" alt="Circuitul sângelui" class="center-img dynamic-img">
+</section>
+
+<!-- BUTON ÎNAPOI -->
+<div class="buttons" style="margin-bottom: 3rem;">
+  <button id="goBackBtn">Înapoi la Sisteme</button>
+</div>
+
+<!-- SWITCH TEMĂ -->
+<div id="theme-toggle" onclick="toggleTheme()">
+  <i class='bx bx-moon'></i>
+</div>
+  <script src="assets/js/script-circulator.js"></script>
+</body>
+</html>
